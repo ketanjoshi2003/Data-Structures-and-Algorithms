@@ -1,0 +1,13 @@
+def move_zeroes(nums):
+    left = 0
+    
+    for right in range(len(nums)):
+        if nums[right] != 0:
+            nums[left], nums[right] = nums[right] ,nums[left]
+            
+            left += 1
+        
+# Test it
+nums = [0, 1, 0, 3, 12]
+move_zeroes(nums)
+print(nums) # Should print [1, 3, 12, 0, 0]
