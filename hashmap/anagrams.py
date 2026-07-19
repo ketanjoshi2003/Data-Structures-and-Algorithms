@@ -17,7 +17,6 @@ def is_anagram(s, t):
             return False
             
         # BLANK 1: Subtract 1 from the character's count
-        # Hint: char_count[char] = char_count[char] - 1
         char_count[char] = char_count[char] - 1 
         
     # BLANK 2: What do we return if we make it through the loop without returning False?
